@@ -1,3 +1,4 @@
+import './news-article.js';
 import {topHeadLinesUrl} from './newsapi.js'
 
 window.addEventListener('load', () => {
