@@ -6,7 +6,7 @@ constructor(){
 }
 
     set article(article){
-        this.root.HTML =`
+        this.root.innerHTML =`
         <style>
             h2 {
                 font-family: Gerogia, 'Times New Roman', Times;
