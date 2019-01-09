@@ -1,5 +1,5 @@
-import "./news-article.js";
-import {topHeadlinesUrl} from "./newsapi.js";
+import './news-article.js';
+import {topHeadlinesUrl} from './newsapi.js';
 
 window.addEventListener('load', () => {
   //load listener helps prevent initial render being block by some js 
@@ -10,7 +10,6 @@ window.addEventListener('load', () => {
 async function fetchNews() { //async function to get news articles
   const res = await fetch(topHeadlinesUrl); //results from fetching top headlines
   const json = await res.json(); //extract json response from news api
-  const article = await json.article();
 
   const main = document.querySelector('main');
 

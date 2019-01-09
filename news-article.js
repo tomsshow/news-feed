@@ -2,14 +2,14 @@ class NewsArticle extends HTMLElement {
 
 constructor(){
     super();
-    this.root = this.attachShadow({mode: open});
+    this.root = this.attachShadow({mode: 'open'});
 }
 
     set article(article){
         this.root.innerHTML =`
         <style>
             h2 {
-                font-family: Gerogia, 'Times New Roman', Times;
+                font-family: Gerogia, 'Times New Roman', Times, serif;
             }
             a,
             a:visited {
