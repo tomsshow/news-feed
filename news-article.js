@@ -4,7 +4,7 @@ constructor(){
     super();
     this.root = this.attachShadow({mode: 'open'});
 }
-
+    //change this to news-feed component
     set article(article){
         this.root.innerHTML =`
         <style>

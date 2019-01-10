@@ -12,9 +12,17 @@
       <a href="#about">About</a>
     </div>
     <header class="v-header container">
-        <div class="fullscreen-video-wrap">
-            <video src="./media/video/Workspace.mp4" autoplay="true" muted loop="true"></video>
+        <div id="video-player" class="fullscreen-bg">
+            <video class="fullscreen-bg__video" src="./media/video/WomanNewspaper.mp4" autoplay="true" muted></video>
+            <div class="fullscreen-bg__playlist">
+                <a href="./media/video/WomanNewspaper.mp4" class="current-video"></a>
+                <a href="./media/video/ManNewsPaper.mp4"></a>
+                <a href="./media/video/OfficeDesk.mp4"></a>
+            </div>
         </div>
+        <!-- <div class="fullscreen-video-wrap">
+            <video src="./media/video/WomanNewspaper.mp4" autoplay="true" muted loop="true"></video>
+        </div> -->
       <div class="header-overlay"></div>
       <div class="header-content">
           <h1>Fake News!</h1>
@@ -41,5 +49,6 @@
 
     </main>
     <script src='./index.js' type="module"></script>
+    <script src='./video.js' type="module"></script>
   </body>
 </html>
